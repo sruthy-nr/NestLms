@@ -1,0 +1,40 @@
+
+
+<nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">ADMIN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/addnavbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              EMPLOYEE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/addemployee">ADD EMPLOYEE</a></li>
+              <li><a class="dropdown-item" routerLink="/viewemployee">VIEW EMPLOYEE</a></li>
+              <li><a class="dropdown-item" routerLink="/searchemployee">SEARCH EMPLOYEE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SECURITY
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/addsecurity">ADD SECURITY</a></li>
+              <li><a class="dropdown-item" routerLink="/viewsecurity">VIEW SECURITY</a></li>
+              <li><a class="dropdown-item" routerLink="/searchsecurity">SEARCH SECURITY</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">LOGOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
