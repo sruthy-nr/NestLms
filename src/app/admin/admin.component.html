@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="width: 30rem;align-content: center;">
+                <div class="card text-center" style="width: 30rem;align-content: center;">
+                    <div class="card-body">
+                        <h3 class="card-title">ADMIN LOGIN</h3>
+                        <div class="row g-3 mt-3">
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label for="" class="form-label">USERNAME</label>
+                                    <input type="text" class="form-control" name="username" [(ngModel)]="username">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label for="" class="form-label">PASSWORD</label>
+                                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <label for="" class="form-label"></label>
+                                    <button class="btn btn-primary" (click)="readValues()">LOGIN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
