@@ -1,0 +1,22 @@
+<app-employee></app-employee>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of data">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">SECURITY CODE : {{i.seccode}}</h5>
+                      <p class="card-text">NAME : {{i.name}}</p>
+                      <p class="card-text">PHONE : {{i.phone}}</p>
+                      <p class="card-text">EMAIL : {{i.email}}</p>
+                      <p class="card-text">PASSWORD : {{i.password}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
