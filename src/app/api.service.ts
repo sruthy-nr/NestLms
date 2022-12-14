@@ -31,4 +31,16 @@ export class ApiService {
   deleteSecurity=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/deletesecurity",dataToSend)
   }
+  employeeLogin=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/employeelogin",dataToSend)
+  }
+  viewProfile=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",dataToSend)
+  }
+  securityLogin=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/securitylogin",dataToSend)
+  }
+  viewSecurityProfile=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewsecurityprofile",dataToSend)
+  }
 }

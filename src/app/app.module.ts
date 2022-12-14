@@ -14,6 +14,10 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecurityViewProfileComponent } from './security-view-profile/security-view-profile.component';
+import { EmployeeViewProfileComponent } from './employee-view-profile/employee-view-profile.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -46,6 +50,22 @@ const myRoute:Routes=[
   {
     path:"searchsecurity",
     component:SearchSecurityComponent
+  },
+  {
+    path:"employeelogin",
+    component:EmployeeLoginComponent
+  },
+  {
+    path:"viewprofile",
+    component:EmployeeViewProfileComponent
+  },
+  {
+    path:"securitylogin",
+    component:SecurityLoginComponent
+  },
+  {
+    path:"viewsecurityprofile",
+    component:SecurityViewProfileComponent
   }
 
 
@@ -60,7 +80,11 @@ const myRoute:Routes=[
     SearchEmployeeComponent,
     AddSecurityComponent,
     ViewSecurityComponent,
-    SearchSecurityComponent
+    SearchSecurityComponent,
+    EmployeeLoginComponent,
+    SecurityLoginComponent,
+    SecurityViewProfileComponent,
+    EmployeeViewProfileComponent
   ],
   imports: [
     BrowserModule,
