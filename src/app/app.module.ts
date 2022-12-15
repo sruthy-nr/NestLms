@@ -18,6 +18,7 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SecurityViewProfileComponent } from './security-view-profile/security-view-profile.component';
 import { EmployeeViewProfileComponent } from './employee-view-profile/employee-view-profile.component';
+import { EmployeeNavComponent } from './employee-nav/employee-nav.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -84,7 +85,8 @@ const myRoute:Routes=[
     EmployeeLoginComponent,
     SecurityLoginComponent,
     SecurityViewProfileComponent,
-    EmployeeViewProfileComponent
+    EmployeeViewProfileComponent,
+    EmployeeNavComponent
   ],
   imports: [
     BrowserModule,
