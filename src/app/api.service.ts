@@ -43,4 +43,7 @@ export class ApiService {
   viewSecurityProfile=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/viewsecurityprofile",dataToSend)
   }
+  applyLeave=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/applyleave",dataToSend)
+  }
 }
