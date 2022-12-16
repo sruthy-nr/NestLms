@@ -1,0 +1,37 @@
+<app-admin-manage></app-admin-manage>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">CURRENT DATE</label>
+                    <input type="date" name="entrydatetime" [(ngModel)]="entrydatetime" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="readValues()" class="btn btn-secondary">CLICK</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <!-- <th scope="col">ID</th> -->
+                          <th scope="col">EMPLOYEE CODE</th>
+                          <th scope="col">ENTRY TIME</th>
+                          <th scope="col">EXIT TIME</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let i of searchdata" >
+                          <!-- <td>{{i.empid}}</td> -->
+                          <td>{{i.empcode}}</td>
+                          <td>{{i.entrydatetime}}</td>
+                          <td>{{i.exitdatetime}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
