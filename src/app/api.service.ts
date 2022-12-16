@@ -55,4 +55,20 @@ export class ApiService {
   leaveRejected=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/leaverejected",dataToSend)
   }
+  entryLog=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/entry",dataToSend)
+  }
+  viewExitList=()=>{
+    return this.http.get("http://localhost:8080/viewexitlist")
+  }
+  exitLog=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/exit",dataToSend)
+  }
+  dailyLogs=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/dailylogs",dataToSend)
+  }
+  datewiseLogs=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/datewiselogs",dataToSend)
+  }
+
 }

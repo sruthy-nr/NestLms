@@ -1,0 +1,39 @@
+<app-security-nav></app-security-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <!-- <th scope="col">ID</th> -->
+                          <th scope="col">EMPLOYEE CODE</th>
+                          <th scope="col">ENTRY TIME</th>
+                          <th scope="col">EXIT TIME</th>
+                          <th scope="col">EXIT</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let i of data" >
+                          <!-- <td>{{i.id}}</td> -->
+                          <td>{{i.empcode}}</td>
+                          <td>{{i.entrydatetime}}</td>
+                          <td>
+                            <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <input type="datetime-local" class="form-contol" name="exitdatetime" [(ngModel)]="exitdatetime">
+                            </div>
+                          </td>
+                          <td>
+                            <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <button (click)="exit(i.id)" class="btn btn-secondary">EXIT</button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
