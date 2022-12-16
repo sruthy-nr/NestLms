@@ -7,7 +7,6 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
-import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
@@ -19,14 +18,14 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { SecurityViewProfileComponent } from './security-view-profile/security-view-profile.component';
 import { EmployeeViewProfileComponent } from './employee-view-profile/employee-view-profile.component';
 import { EmployeeNavComponent } from './employee-nav/employee-nav.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
+import { AdminManageComponent } from './admin-manage/admin-manage.component';
+import { SecurityNavComponent } from './security-nav/security-nav.component';
 const myRoute:Routes=[
   {
     path:"",
     component:AdminComponent
-  },
-  {
-    path:"employee",
-    component:EmployeeComponent
   },
   {
     path:"addemployee",
@@ -67,15 +66,17 @@ const myRoute:Routes=[
   {
     path:"viewsecurityprofile",
     component:SecurityViewProfileComponent
+  },
+  {
+    path:"applyleave",
+    component:ApplyLeaveComponent
   }
-
 
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    EmployeeComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
     SearchEmployeeComponent,
@@ -86,7 +87,11 @@ const myRoute:Routes=[
     SecurityLoginComponent,
     SecurityViewProfileComponent,
     EmployeeViewProfileComponent,
-    EmployeeNavComponent
+    EmployeeNavComponent,
+    MainNavComponent,
+    ApplyLeaveComponent,
+    AdminManageComponent,
+    SecurityNavComponent
   ],
   imports: [
     BrowserModule,
