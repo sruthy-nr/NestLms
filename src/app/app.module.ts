@@ -22,6 +22,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { AdminManageComponent } from './admin-manage/admin-manage.component';
 import { SecurityNavComponent } from './security-nav/security-nav.component';
+import { ViewLeaveComponent } from './view-leave/view-leave.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -70,6 +71,10 @@ const myRoute:Routes=[
   {
     path:"applyleave",
     component:ApplyLeaveComponent
+  },
+  {
+    path:"viewleave",
+    component:ViewLeaveComponent
   }
 
 ]
@@ -91,7 +96,8 @@ const myRoute:Routes=[
     MainNavComponent,
     ApplyLeaveComponent,
     AdminManageComponent,
-    SecurityNavComponent
+    SecurityNavComponent,
+    ViewLeaveComponent
   ],
   imports: [
     BrowserModule,
