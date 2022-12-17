@@ -70,5 +70,17 @@ export class ApiService {
   datewiseLogs=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/datewiselogs",dataToSend)
   }
+  visitorEntry=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/visitorentry",dataToSend)
+  }
+  viewVisitor=()=>{
+    return this.http.get("http://localhost:8080/viewvisitor")
+  }
+  visitorExit=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/visitorexit",dataToSend)
+  }
+  visitorDailyLogs=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/visitordailylogs",dataToSend)
+  }
 
 }

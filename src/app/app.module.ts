@@ -27,6 +27,9 @@ import { ViewEmployeeListComponent } from './view-employee-list/view-employee-li
 import { ViewEmployeeListExitComponent } from './view-employee-list-exit/view-employee-list-exit.component';
 import { DailyLogsComponent } from './daily-logs/daily-logs.component';
 import { DatewiseLogsComponent } from './datewise-logs/datewise-logs.component';
+import { VisitorEntryComponent } from './visitor-entry/visitor-entry.component';
+import { ViewVisitorComponent } from './view-visitor/view-visitor.component';
+import { VisitordailylogsComponent } from './visitordailylogs/visitordailylogs.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -95,6 +98,18 @@ const myRoute:Routes=[
   {
     path:"datewiselogs",
     component:DatewiseLogsComponent
+  },
+  {
+    path:"visitorentry",
+    component:VisitorEntryComponent
+  },
+  {
+    path:"viewvisitor",
+    component:ViewVisitorComponent
+  },
+  {
+    path:"visitordailylogs",
+    component:VisitordailylogsComponent
   }
 
 
@@ -122,7 +137,10 @@ const myRoute:Routes=[
     ViewEmployeeListComponent,
     ViewEmployeeListExitComponent,
     DailyLogsComponent,
-    DatewiseLogsComponent
+    DatewiseLogsComponent,
+    VisitorEntryComponent,
+    ViewVisitorComponent,
+    VisitordailylogsComponent,
   ],
   imports: [
     BrowserModule,
