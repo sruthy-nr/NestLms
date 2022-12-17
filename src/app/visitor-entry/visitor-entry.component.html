@@ -1,0 +1,31 @@
+<app-security-nav></app-security-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h2>VISITOR</h2>
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">NAME</label>
+                    <input type="text" name="name" [(ngModel)]="name" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">PURPOSE</label>
+                    <input type="text" name="purpose" [(ngModel)]="purpose" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">WHOM TO MEET</label>
+                    <input type="text" name="whomtomeet" [(ngModel)]="whomtomeet" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">ENTRY DATE TIME</label>
+                    <input type="datetime-local" name="entrydatetime" [(ngModel)]="entrydatetime" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"></label>
+                    <button (click)="readValues()" class="btn btn-primary">ENTER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
